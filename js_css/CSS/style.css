@@ -543,6 +543,8 @@ header{
     width: 40%;
 }
 .faq-description img{
+    display: flex;
+    flex-direction: column;
     height: 15rem;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 10px;
@@ -979,7 +981,7 @@ main-container {
     font-size: 1rem; /* Adjusted for space */
     font-weight: 600;
     margin: 0 0 1rem 0;
-    text-transform: uppercase;
+    text-transform: uppercase   ;
 }
 
 .service-card .details-link {
@@ -1294,6 +1296,9 @@ main-container {
 }
 
 .section-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-transform: uppercase;
     font-size: 1.2rem;
     font-weight: 800;
@@ -1975,6 +1980,9 @@ footer a{
         border-top: none;
         padding-top: 0;
     }
+    .company-video h1{
+        padding: var(--1200padding);
+    }
 
     /* Ensure sidebar articles are separated correctly when stacked */
     .sidebar-article:first-child {
@@ -2028,12 +2036,34 @@ footer a{
         /* Adjust border radius for smaller screens if needed */
         border-radius: 50px 20px 50px 20px; 
     }
+    .milestone{
+        flex-wrap: wrap;
+    }
 
     /* Stack the 4 Feature Cards */
     .why-us {
         grid-template-columns: 1fr; /* 1 column instead of 4 */
         gap: 1.5rem;
         padding-bottom: 4rem;
+    }
+    .FAQ{
+        flex-direction: column;
+        padding: var(--600padding);
+    }
+    .faq-description{
+        width: 100%;
+    }
+    .faq-description img{
+        height: 12rem;
+        width: 100%;
+    }
+    .ditails-container{
+        width: 100%;
+    }
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 2 cols on mobile */
+        gap: 2rem;
     }
 
     /* Adjust Card Padding */
@@ -2086,6 +2116,9 @@ footer a{
         flex-direction: column;
     }
 
+    .company-video h1{
+        padding: var(--800padding);
+    }
     .featured-articles {
         grid-template-columns: 1fr;
     }
@@ -2107,11 +2140,53 @@ footer a{
     header{
         padding: var(--600padding) ;
     }
+    .first-section{
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .why-us{
+        padding-top: 9rem !important;
+        padding: var(--600padding);
+    }
+    .FAQ{
+        padding: var(--600padding);
+    }
     .companions img {
         height: 3rem;
     }
+    .about-start{
+        padding: var(--600padding);
+    }
+    .ourgoal{
+        padding: var(--600padding);
+        padding-top: 5rem !important;
+    }
+    .ourgoal h1{
+        margin-bottom: 0;
+    }
+    .companions div{
+        gap: 1.5rem;
+    }
+    .video-container {
+        width: 90%;
+        max-width: 100rem;
+        margin: auto;
+    }
+    .company-video h1{
+        padding: var(--600padding);
+    }
     .services-container {
         padding: 1rem 1.5rem;
+    }
+    .lab-title{
+        padding: var(--600padding);
+        padding-bottom: 0 !important;
+    }
+    .test-item img{
+        height: 6rem;
+    }
+    .baigullaga_paragraph{
+        padding: var(--600padding);
     }
     
     .card-container-horizontal,
