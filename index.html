@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home_Page</title>
+    <link rel="stylesheet" href="js_css/CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="js_css/CSS/swiper-bundle.min.css" />
+  </head>
+  <!--   <body background="Pictures/DNAbg.png" style="background-size: cover; background-position: center; backdrop-filter: blur(10px);"> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <body>
+    <div id="particles-js"></div>
+
+
+    <header>
+      <div class="nav-menu">
+        <div class="logo">
+          <a href="index.html"></a>
+          <img src="Icons/LogoWhite.png" />
+        </div>
+        <div class="menus">
+          <div class="about_us"><a href="about_us.html">БИДНИЙ ТУХАЙ</a></div>
+          <div class="dropdown">
+            <a href="service.html">ҮЙЛЧИЛГЭЭ</a>
+            <div class="dropdown-content">
+              <a href="service.html">КЛИНИК ЛАБОРАТОРИЙН ШИНЖИЛГЭЭ</a>
+              <a href="service.html">БАГАЖИЙН ШИНЖИЛГЭЭ</a>
+              <a href="service.html">ЭМЧИЙН ҮЗЛЭГ, ЗӨВЛӨМЖ</a>
+              <a href="service.html">БАГЦ</a>
+              <a href="service.html">ЭМЧИЛГЭЭ</a>
+            </div>
+          </div>
+          <div class="comp-service">
+            <a href="company_service.html">БАЙГУУЛЛАГЫН ҮЙЛЧИЛГЭЭ</a>
+          </div>
+          <div class="dropdown">
+            <a href="blog.html">НИЙТЛЭЛ</a>
+            <div class="dropdown-content">
+              <a href="blog.html">ОНЦЛОХ</a>
+              <a href="blog.html">ТАНИН МЭДЭХҮЙ</a>
+            </div>
+          </div>
+          <div class="contact-us"><a href="#contactSec">ХОЛБОО БАРИХ</a></div>
+        </div>
+        <div class="language">
+          <a href="indexENG.html" class="en-mn">EN / MN</a>
+        </div>
+      </div>
+      <div class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+      <div class="off-screen-menu">
+        <div class="about_us">
+            <a href="about_us.html">БИДНИЙ ТУХАЙ</a>
+        </div>
+        <div class="about_us">
+            <a href="service.html">ҮЙЛЧИЛГЭЭ</a>
+        </div>
+        <div class="about_us">
+            <a href="company_service.html">БАЙГУУЛЛАГЫН ҮЙЛЧИЛГЭЭ</a>
+        </div>
+        <div class="about_us">
+            <a href="blog.html">НИЙТЛЭЛ</a>
+        </div>
+        <div class="about_us">
+            <a href="#contactSec">ХОЛБОО БАРИХ</a>
+        </div>
+      </div>
+
+
+    <div class="body-container reveal"> 
+      <div class="first-section reveal">
+        <div class="slogan">
+            <h1>
+                ЭРҮҮЛ ИРЭЭДҮЙН<br />
+                ТӨЛӨӨ ХАМТДАА
+            </h1>
+            <h5>
+              Орчин үеийн дэвшилтэт технологи бүхий аппарат техник хэрэгслийн 
+              тусламжтай лабораторийн болоод дүрс оношлогоо шинжилгээг чанарын 
+              өндөр түвшинд үнэн зөв, бодит , хурдан шуурхай, чанартай хийнэ.
+            </h5>
+            <div class="serv-btn"><a href="service.html">Үйлчилгээ харах</a></div>
+        </div>
+        <div class="big_image">
+            <img src="Pictures/HeroImg.jpg" alt="Doctor Team" />
+        </div>
+      </div>
+
+      <div class="why-us">
+        <div class="reveal" data-delay="100">
+          <div class="why1 feature-item">
+              <div class="icon-box">
+                  <img src="Icons/medical-team.png"/>
+              </div>
+              <h3>Мэргэжлийн тусламж үйлчилгээ </h3> 
+              <p>Эмч, сувилагч, лаборант зэрэг өндөр мэргэшсэн баг хамт олноор үйлчлүүлэгчиддээ чанартай үйлчилгээ үзүүлдэг.</p>
+          </div>
+        </div>
+        <div class="reveal" data-delay="200">
+          <div class="why2 feature-item">
+              <div class="icon-box">
+                  <img src="Icons/surgery-room.png"/>
+              </div>
+              <h3>Оношлогоо-эмчилгээний иж бүрэн боломж </h3>
+              <p>Лаборатори, дүрс оношлогоо, эмчилгээ, сэргийлэлт зэрэг нэг дор төвлөрсөн цогц үйлчилгээтэй.</p>
+          </div>
+        </div>
+        <div class="reveal" data-delay="300">
+          <div class="why3 feature-item">
+              <div class="icon-box">
+                  <img src="Icons/reliability.png"/>
+              </div>
+              <h3>Аюулгүй байдал ба стандарт </h3>
+              <p>Эрүүл ахуй, халдвар хамгааллын олон улсын стандартыг мөрдөж, үйлчлүүлэгчийн мэдээллийг нууцлалтай хадгалдаг.</p>
+          </div>
+        </div>
+        <div class="reveal" data-delay="400">
+          <div class="why4 feature-item">
+              <div class="icon-box">
+                  <img src="Icons/public-service.png"/>
+              </div>
+              <h3>Үйлчлүүлэгч төвтэй үйлчилгээ</h3>
+              <p>Хурдан шуурхай, найрсаг хандлага, зөвлөгөө мэдээллийг ойлгомжтой өгөх, өвчтөнд ээлтэй орчин бүрдүүлдэг</p>
+          </div>
+        </div>
+      </div>
+      <section class="testimonial reveal" data-delay="150">
+        <h2 class="testimonial__title">Үйлчлүүлэгчдийн сэтгэгдэл</h2>
+
+        <div class="testimonial__swiper container swiper">
+          <div class="swiper-wrapper">
+            <article class="testimonial__card swiper-slide">
+              <!-- <img src="Pictures/1.jpg" alt="Image" class="testimonial__img" /> -->
+              <h3 class="testimonial__name">Б. Бат-Оргил</h3>
+              <div class="testimonial__rating">
+                <div class="testimonial__stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <!-- <h3 class="testimonial_number">5.0</h3> -->
+              </div>
+              <p class="testimonial__description">
+                VIP багцаар үйлчлүүлсэн. Үнэхээр мөнгөндөө таарсан үйлчилгээ! 
+                Бүх нарийн шинжилгээ, хэд хэдэн эмчийн зөвлөгөөг нэг дор 
+                авчихсан. Эмч нар нь үнэхээр туршлагатай, зөвлөгөө нь маш 
+                үнэ цэнэтэй байсан. Техник тоног төхөөрөмж нь ч орчин үеийнх. 👍
+              </p>
+            </article>
+            <article class="testimonial__card swiper-slide">
+              <!-- <img src="Pictures/2.jpg" alt="Image" class="testimonial__img" /> -->
+              <h3 class="testimonial__name">Э. Энхтуул</h3>
+              <div class="testimonial__rating">
+                <div class="testimonial__stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <!-- <h3 class="testimonial_number">5.0</h3> -->
+              </div>
+              <p class="testimonial__description">
+                Цусны шинжилгээний хариу маш хурдан гарсан. 1 цаг болоогүй байхад л 
+                SMS-ээр ирчихсэн. Мөн шинжилгээнд бэлдэх заавар маш тодорхой байсан 
+                учраас алдаагүй, үнэн зөв хариу авсан. Лаборантууд нь ч найрсаг.
+              </p>
+            </article>
+            <article class="testimonial__card swiper-slide">
+              <!-- <img src="Pictures/3.jpg" alt="Image" class="testimonial__img" /> -->
+              <h3 class="testimonial__name">Ц. Нандинцэцэг</h3>
+              <div class="testimonial__rating">
+                <div class="testimonial__stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <!-- <h3 class="testimonial_number">5.0</h3> -->
+              </div>
+              <p class="testimonial__description">
+                ЭХО-д үзүүлсэн, эмч нь маш сайн тайлбарлаж, ойлгуулж өгсөн. 
+                Ялангуяа ЭХО нь цацраггүй болохоор хүүхэдтэй эсвэл жирэмсэн 
+                хүнд аюулгүй гэж хэлж өгсөн нь таалагдсан. Цаг авч үзүүлбэл 
+                чирэгдэлгүй юм билээ.
+              </p>
+            </article>
+            <article class="testimonial__card swiper-slide">
+              <!-- <img src="Pictures/4.jpg" alt="Image" class="testimonial__img" /> -->
+              <h3 class="testimonial__name">Д. Тулга</h3>
+              <div class="testimonial__rating">
+                <div class="testimonial__stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <!-- <h3 class="testimonial_number">5.0</h3> -->
+              </div>
+              <p class="testimonial__description">
+                Хэвлийн ЭХО болон бусад дүрс оношлогоонд цаг авч үзүүллээ. ЭХО-д 
+                хүүхэд, жирэмсэн хүнд ч аюулгүй гэж тайлбарлаж өгсөн нь таалагдсан. 
+                Оношлогооны эмч нь маш сайн тайлбарлаж өгч, зургийг зөвхөн эмчийн 
+                дүгнэлттэй хамт ойлгох хэрэгтэйг сануулсан нь их зөв санагдсан.
+              </p>
+            </article>
+            <article class="testimonial__card swiper-slide">
+              <!-- <img src="Pictures/5.jpg" alt="Image" class="testimonial__img" /> -->
+              <h3 class="testimonial__name">Г. Ариунболд</h3>
+              <div class="testimonial__rating">
+                <div class="testimonial__stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <!-- <h3 class="testimonial_number">5.0</h3> -->
+              </div>
+              <p class="testimonial__description">
+                Чих хамар хоолойн эмч нь их хүнч. Ялангуяа "ханиад хүрэхээр 
+                шууд антибиотик ууж болохгүй" гээд зөвлөж өгсөн нь их таалагдсан. 
+                Үзлэг нь нарийн бас хурдан байсаан.
+              </p>
+            </article>
+            <article class="testimonial__card swiper-slide">
+              <!-- <img src="Pictures/6.jpg" alt="Image" class="testimonial__img" /> -->
+              <h3 class="testimonial__name">T. Одгэрэл</h3>
+              <div class="testimonial__rating">
+                <div class="testimonial__stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <!-- <h3 class="testimonial_number">5.0</h3> -->
+              </div>
+              <p class="testimonial__description">
+                Эмнэлэг нь цэвэрхэн, орчин нь тав тухтай. Ажилтнууд нь хурдан, 
+                инээгээд үйлчилж байгаа нь сэтгэлд их дулаахан байсан. Үйлчилгээнд 
+                ямар ч хүндрэл гараагүй, бүх юм маш цэгцтэй зохион байгуулагдсан 
+                байна лээ.
+              </p>
+            </article>
+            <!-- <article class="testimonial__card swiper-slide">
+              <img src="Pictures/6.jpg" alt="Image" class="testimonial__img" />
+              <h3 class="testimonial__name">Tushig Bayarsaikhan</h3>
+              <div class="testimonial__rating">
+                <div class="testimonial__stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <h3 class="testimonial_number">5.0</h3>
+              </div>
+              <p class="testimonial__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                unde eos beatae inventore nam atque eveniet ipsa repellat dicta,
+                hic modi animi sapiente quae repudiandae optio expedita sequi
+                nobis dignissimos!
+              </p>
+            </article> -->
+          </div>
+          <div class="swiper-pagination"></div>
+          <!-- 
+          <div class="swiper-button-prev"><i class="ri-arrow-left-s-line"></i></div>
+          <div class="swiper-button-next"><i class="ri-arrow-right-s-line"></i></div> -->
+        </div>
+      </section>
+
+      <div class="milestone reveal" data-delay="150">
+        <div>
+          <h1>1000</h1>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div>
+          <h1>1000</h1>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div>
+          <h1>1000</h1>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div>
+          <h1>1000</h1>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+      <div class="FAQ reveal" data-delay="100">
+        <div class="faq-description">
+          <img src="Pictures/reception.png" alt="" />
+          <div>
+            <h2>ХЭРЭГЛЭГЧДИЙН ТҮГЭЭМЭЛ АСУУЛТУУД</h2>
+          </div>
+        </div>
+        <div class="ditails-container">
+          <details>
+            <summary>
+              Шинжилгээ өгөхөд юу хэрэгтэй вэ? 
+            </summary>
+            <br />
+            <p>
+              Иргэний үнэмлэх болон өмнөх шинжилгээ/оношилгооны хариу байвал авчирна. Тухайн шинжилгээний зааврын дагуу хоолны дэглэм баримталана 
+            </p>
+          </details>
+          <details>
+            <summary>Шинжилгээний хариу хэдийд гардаг вэ? </summary>
+            <br />
+            <p>
+              Ихэнх суурь шинжилгээ 1–3 цагийн дотор гарна. Тусгай шинжилгээ 24–72 цаг болно. Хариуг SMS, имэйл, эмчийн зөвлөгөө хэлбэрээр авах боломжтой.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Урьдчилсан цаг авах шаардлагатай юу?
+            </summary>
+            <br />
+            <p>
+              Ерөнхий үзлэг, цусны шинжилгээнд ихэвчлэн цаггүй үйлчилнэ. Дүрс оношлогоо (УВЧ, рентген, ЭХО, MRI) болон эмчийн үзлэгт цаг авах шаардлагатай.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Хүүхэд шинжилгээ өгч болох уу? 
+            </summary>
+            <br />
+            <p>
+              Тийм. Бүх насны хүүхдэд зориулсан аюулгүй, өвдөлт багатай аргаар шинжилгээ авч, эмчийн зөвлөгөө өгдөг.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Шинжилгээ өгөхөөс өмнө юу анхаарах вэ? 
+            </summary>
+            <br />
+            <p>
+              <strong>ЦУСНЫ ДЭЛГЭРЭНГҮЙ ШИНЖИЛГЭЭНД БЭЛДЭХ</strong><br>
+              •	Цусны шинжилгээг 8-10 цагийн хооронд болон шаардлагатай тохиолдолд хоногийн аль ч үед авах боломжтой.<br>
+              •	Цусны дэлгэрэнгүй шинжилгээ өгөхийн өмнө өлөн эсвэл хөнгөн цайлласан байхад болно.<br>
+              <strong>БИОХИМИЙН ШИНЖИЛГЭЭНД БЭЛДЭХ</strong><br>
+              •	Биохимийн шинжилгээг өглөө өлөн, тайван үед өгөх хэрэгтэй. (ус ууж болно)<br>
+              •	Шинжилгээ өгөхийн өмнөх өдөр нь архи тамхи хэрэглээгүй, шарсан хуурсан хоол идээгүй, өөх тос хэрэглээгүй, сахартай хүнс хэрэглээгүй байх хэрэгтэй.<br>
+              •	Сахар, өөх тос, нойр булчирхайн шинжилгээнд 10-12 цаг зайлшгүй өлөн байх шаардлагатай.<br>
+              <strong>ДААВРЫН ШИНЖИЛГЭЭНД БЭЛДЭХ</strong><br>
+              •	Дааврын шинжилгээг өглөө, тайван үед ирж өгөх ёстой.<br>
+              •	Хөнгөн цайлласан байж болно<br>
+              •	Бэлгийн дааврын хэмжээ тодорхойлох үед эмч таны сарын тэмдэгийн мөчлөгтэй уялдуулан шинжилгээ өгөх хугацааг тодорхой зааж өгдөг. Тухайлбал ФСГ, ЛГ, пролактин, прогестерон, эстрадиол, тестостерон зэрэг дааврийн түвшин тодорхойлох үед.<br>
+              <strong>ШЭЭСНИЙ ШИНЖИЛГЭЭНД БЭЛДЭХ</strong><br>
+              •	Шээсийг зориулалтын нэг удаагийн ариун саванд хийж авчирч өгнө.Савыг лаборатори, эмнэлгийн байгууллагаас авна.<br>
+              •	Шинжилгээ өгөхийн өмнө гадна бэлэг эрхтнээ сайтар угаасан байх хэрэгтэй.<br>
+              •	Шээсний шинжилгээ өгөхийн өмнө шээсний өнгөнд өөрчлөлт өгдөг хоол хүнс хэрэглэж болохгүй. <br>
+              •	Шээсний шинжилгээний сорьцийг өглөөний өлөн шээсний дунд хэсгээс зориулалтын савны ½ (100-200мл) орчим шээс тосож авна.<br>
+              •	Шаардлагатай тохиолдолд 2-3 цагийн шээсний сорьц авч болно.<br>
+              •	Шээсний ерөнхий шинжилгээний сорьцийг авснаас хойш 2 цагийн дотор лабораторит аль болох хурдан хүргэнэ. Хөлдөөж болохгүй.<br>
+            </p>
+          </details>
+          <details>
+            <summary>
+              Даатгалаар үйлчилдэг үү?  
+            </summary>
+            <br />
+            <p>
+              Эрүүл мэндийн даатгалаар үзүүлэх боломжтой үйлчилгээ байгаа бол системтэй холбогдон шалгаж өгнө.
+            </p>
+          </details>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-menu">
+        <div class="f-about-us">
+          <div class="f-header">
+            <i class="bi bi-info-circle-fill"> Бидний тухай</i>
+          </div>
+          <!-- <div class="line"></div> -->
+          <div>
+            <a href="about_us.html">Хуудас руу очих</a>
+          </div>
+        </div>
+        <div class="f-service">
+          <div class="f-header"><i class="bi bi-activity"> Үйлчилгээ</i></div>
+          <!-- <div class="line"></div> -->
+          <div>
+            <a href="service.html">Клиник лабораторийн шинжилгээ</a>
+            <a href="service.html">Багажийн шинжилгээ</a>
+            <a href="service.html">Эмчийн үзлэг, зөвлөмж</a>
+            <a href="service.html">Багц</a>
+            <a href="service.html">Эмчилгээ</a>
+          </div>
+        </div>
+        <div class="f-comp-service">
+          <div class="f-header">
+            <i class="bi bi-buildings"> Байгууллагын үйлчилгээ</i>
+          </div>
+          <!-- <div class="line"></div> -->
+          <div>
+            <a href="company_service.html">Хуудас руу очих</a>
+          </div>
+        </div>
+        <div class="f-blog">
+          <div class="f-header"><i class="bi bi-newspaper"> Нийтлэл</i></div>
+          <!-- <div class="line"></div> -->
+          <div>
+            <a href="blog.html">Онцлох</a>
+            <a href="blog.html">Танин мэдэхүй</a>
+          </div>
+        </div>
+        <div class="f-contact-us">
+          <div class="f-header" id="contactSec">
+            <i class="bi bi-person-lines-fill"> Холбоо барих</i>
+          </div>
+          <!-- <div class="line"></div> -->
+          <div>
+            <p><i class="ri-phone-fill"></i> 75058887</p>
+            <p>
+              <i class="ri-map-pin-line"></i> БЗД 41-р хороо Кино үйлдвэрт
+              CENTURY21 2 давхарт
+            </p>
+            <p><i class="ri-mail-line"></i> labdrbayasgalan@gmail.com</p>
+            <a href="https://www.facebook.com/Dialabemneleg88" target="_blank"
+              ><i class="ri-facebook-circle-fill"></i> Диалаб Эмнэлэг</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- <div class="backToTop">
+        <button id="bttopBTN">
+          <span class="arrow"></span>
+          <span class="arrow"></span>
+        </button>
+      </div> -->
+      <div class="end-section">
+        <div class="endcrecit">Dialab Labarotary Hospital</div>
+        <div class="end_line"></div>
+        <div class="endcrecit1">Powered by Nexxa Agency</div>
+      </div>
+    </footer>
+    <script src="js_css/JS/effect.js"></script>
+
+    <!-- swiper js -->
+    <script src="js_css/JS/swiper-bundle.min.js"></script>
+
+    <!-- particle js -->
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 70,
+          },
+          color: {
+            value: "#00A5B5",
+          },
+          shape: {
+            type: "circle",
+          },
+          opacity: {
+            value: 0.1,
+          },
+          size: {
+            value: 5,
+          },
+          move: {
+            enable: true,
+            speed: 0.5,
+            direction: "none",
+            straight: false,
+            out_mode: "out",
+          },
+          line_linked: {
+            enable: true, // ✨ Enables the lines
+            distance: 160, // 🔹 Max distance to connect particles
+            color: "#00A5B5", // 🎨 Line color
+            opacity: 0.3, // 🌫️ Line transparency
+            width: 1, // 📏 Line thickness
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: true,
+            },
+          },
+          onclick: {
+            enable: false,
+          },
+        },
+        retina_detect: true,
+      });
+    </script>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const hamMenu = document.querySelector('.ham-menu');
+        const offScreenMenu = document.querySelector('.off-screen-menu');
+        const header = document.querySelector('header'); // Get the header to potentially lock scrolling
+
+            if (hamMenu && offScreenMenu && header) {
+                hamMenu.addEventListener('click', () => {
+                    // Toggle the 'active' class on both the hamburger icon and the off-screen menu
+                    hamMenu.classList.toggle('active');
+                    offScreenMenu.classList.toggle('active');
+                    // Optional: Add a class to the body/header to prevent scrolling when the menu is open
+                    header.classList.toggle('menu-open');
+                });
+
+                // Optional: Close menu when a link is clicked (since they navigate away anyway)
+                const offScreenLinks = offScreenMenu.querySelectorAll('a');
+                offScreenLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        hamMenu.classList.remove('active');
+                        offScreenMenu.classList.remove('active');
+                        header.classList.remove('menu-open');
+                    });
+                });
+            }
+        });
+      </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // 1. Get all elements to observe
+        const revealElements = document.querySelectorAll(".reveal");
+
+        // 2. Define the observer options
+        const options = {
+          root: null, // Use the viewport as the root
+          rootMargin: "0px",
+          // Trigger the callback when 10% of the element is visible
+          threshold: 0.1,
+        };
+
+        // 3. Define the callback function
+        const callback = (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              // When the element enters the viewport:
+              const element = entry.target;
+
+              // Set the delay if the data-delay attribute exists
+              const delay = element.getAttribute("data-delay");
+              if (delay) {
+                element.style.setProperty("--reveal-delay", `${delay}ms`);
+              }
+
+              // Add the 'active' class to start the animation
+              element.classList.add("active");
+
+              // Stop observing the element after it has been revealed once
+              observer.unobserve(element);
+            }
+          });
+        };
+
+        // 4. Create the observer
+        const observer = new IntersectionObserver(callback, options);
+
+        // 5. Start observing the elements
+        revealElements.forEach((element) => {
+          observer.observe(element);
+        });
+      });
+    </script>
+  </body>
+</html>
