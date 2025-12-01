@@ -89,13 +89,32 @@
         implement advanced diagnostic services.
       </div>
 
-      <section class="cta-banner reveal" data-delay="200">
-        <p class="cta-text">
-          If you would like to receive a customized corporate package offer,
-          please access the link below
-        </p>
-        <a href="#" class="btn btn-primary">Google Form Link</a>
-      </section>
+      <div class="contact-wrapper">
+          <div class="form-box">
+              <h2>Submit a Collaboration Request</h2>
+              <p class="form-desc">
+                  Please send us your request to collaborate regarding our products and services.
+              </p>
+
+              <form id="contactForm">
+                  <div class="input-row">
+                      <input id="name" type="text" placeholder="Full Name" required>
+                      <input id="phone" type="text" placeholder="Contact Phone" required>
+                  </div>
+
+                  <div class="input-row">
+                      <input id="email" type="email" placeholder="Email Address" required>
+                      <input id="company" type="text" placeholder="Company Name">
+                  </div>
+
+                  <textarea id="message" placeholder="Additional Request" required></textarea>
+
+                  <button type="submit" class="submit-btn">
+                      Submit Request
+                  </button>
+              </form>
+          </div>
+      </div>
 
       <section class="packages-grid reveal">
         <div class="package-card reveal" data-delay="250">
@@ -340,5 +359,35 @@
             }
         });
     </script>
+
+
+    <!-- hamtran ajillah huseltiin JS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      emailjs.init("OiQDltr6KU2Dqctmc"); 
+    </script>
+
+    <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const params = {
+            from_name: document.getElementById("name").value,
+            phone: document.getElementById("phone").value,
+            from_email: document.getElementById("email").value,
+            company: document.getElementById("company").value,
+            message: document.getElementById("message").value,
+        };
+
+        emailjs.send("service_rt0a9p4", "template_f8onkjf", params)
+        .then(function(response) {
+            alert("Хүсэлт амжилттай илгээгдлээ!");
+            document.getElementById("contactForm").reset(); // Clear form after sending
+        }, function(error) {
+            alert("Алдаа гарлаа. Дахин оролдоно уу.");
+        });
+    });
+    </script>
+    <!-- hamtran ajillah huseltiin JS -->
   </body>
 </html>

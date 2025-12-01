@@ -75,10 +75,8 @@
     <main class="companyServ-container">
         <h2 class="lab-title reveal"  data-delay="100">БАЙГУУЛЛАГЫН БАГЦ ҮЙЛЧИЛГЭЭ</h2>
         <div class="baigullaga_paragraph reveal" data-delay="150">“ДиаЛаб” Оношлогооны төв эмнэлэг нь эмнэлгийн тусламж үйлчилгээг нэг цэгт төвлөрүүлж, хамгийн орчин үеийн дэвшилтэт технологи бүхий аппарат техник хэрэгслийн тусламжтай оношлогоо шинжилгээг үнэн зөв, хурдан шуурхай, чанарын өндөр түвшинд хийх замаар нийгмийн эрүүл ахуйг сахин хамгаалах үйлсэд хувь нэмэр оруулах үндсэн зорилготой. Энэ зорилгын хүрээнд нийслэл Улаанбаатар хотын ХСҮТ, ХӨСҮТ, Бриллиант, Тириомед, ХУДНЭ зэрэг томоохон эмнэлгүүдтэй хамтран ажиллаж сүүлийн үеийн дэвшилтэт технологи, чанарын баталгаатай аппарат тоног төхөөрөмж, ажлын туршалгатай найрсаг хамт олонтойгоор оношилгооны шинэ үйл ажиллагааг нэвтрүүлж ажиллаж байна</div>
-        <section class="cta-banner reveal" data-delay="200">
-            <p class="cta-text">Зөвхөн танай байгууллагад зориулсан багцын санал авахыг хүсвэл та дараах холбоосоор нэвтрээрэй</p>
-            <a href="#" class="btn btn-primary">Google form линк</a>
-        </section>
+        
+
         
         <section class="packages-grid reveal">
             <div class="package-card reveal" data-delay="250">
@@ -164,6 +162,32 @@
                 </div>
             </div>
         </section>
+        <div class="contact-wrapper">
+            <div class="form-box">
+                <h2>Хамтарч ажиллах хүсэлт илгээх</h2>
+                <p class="form-desc">
+                    Та манай бүтээгдэхүүн, үйлчилгээгтэй холбоотой хамтран ажиллах хүсэлтээ илгээнэ үү.
+                </p>
+
+                <form id="contactForm">
+                    <div class="input-row">
+                        <input id="name" type="text" placeholder="Овог, нэр" required>
+                        <input id="phone" type="text" placeholder="Холбогдох утас" required>
+                    </div>
+
+                    <div class="input-row">
+                        <input id="email" type="email" placeholder="Имэйл хаяг" required>
+                        <input id="company" type="text" placeholder="Байгууллагын нэр">
+                    </div>
+
+                    <textarea id="message" placeholder="Нэмэлт хүсэлт" required></textarea>
+
+                    <button type="submit" class="submit-btn">
+                        Хүсэлт илгээх
+                    </button>
+                </form>
+            </div>
+        </div>
 
     </main>
 
@@ -303,5 +327,33 @@
             }
         });
     </script>
+    <!-- hamtran ajillah huseltiin JS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      emailjs.init("OiQDltr6KU2Dqctmc"); 
+    </script>
+
+    <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const params = {
+            from_name: document.getElementById("name").value,
+            phone: document.getElementById("phone").value,
+            from_email: document.getElementById("email").value,
+            company: document.getElementById("company").value,
+            message: document.getElementById("message").value,
+        };
+
+        emailjs.send("service_rt0a9p4", "template_f8onkjf", params)
+        .then(function(response) {
+            alert("Хүсэлт амжилттай илгээгдлээ!");
+            document.getElementById("contactForm").reset(); // Clear form after sending
+        }, function(error) {
+            alert("Алдаа гарлаа. Дахин оролдоно уу.");
+        });
+    });
+    </script>
+    <!-- hamtran ajillah huseltiin JS -->
 </body>
 </html>
