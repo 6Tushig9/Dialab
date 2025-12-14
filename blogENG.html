@@ -10,6 +10,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
     />
 </head>
+<div id="articleModal1" class="modal-overlay1">
+  <div class="modal-content1 reveal-modal">
+    <button class="modal-close1">&times;</button>
+
+    <h2 id="modalTitle1"></h2>
+    <div id="modalBody1"></div>
+  </div>
+</div>
 <body>
     <header>
       <div class="nav-menu">
@@ -77,83 +85,75 @@
         
         <!-- Header -->
         <h1 class="header-title reveal">
-            ОНЦЛОХ МЭДЭЭ
+            FEATURED HEALTH ARTICLES
         </h1>
 
         <!-- 1. FEATURED ARTICLES (3-Column Grid) -->
         <section id="featured-news" class="featured-articles reveal" data-delay="100">
-            
-            <!-- Article 1: US Senate Passes Landmark Infrastructure Bill -->
-            <div class="reveal" data-delay="200">
-                <div class="article-card">
-                    <img src="https://placehold.co/800x400/1e40af/ffffff?text=Capitol+Building" 
-                        alt="US Capitol Building" 
-                        loading="lazy">
-                    <div class="card-content">
-                        <h2 class="card-title">
-                            US Senate Passes Landmark Infrastructure Bill
-                        </h2>
-                        <p class="card-excerpt">
-                            In a historic vote, the Bill Secure approach is to enforce a minimum set of security controls (CSP, origin policy, timing attacks, and click-jacking) for all websites.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <span>3 min read</span>
-                        <button class="share-button">
-                            <!-- Share Icon -->
-                            <!-- <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.882 13.14 9 12.87 9 12.6V4.65c0-.685-.724-1.125-1.353-.824L2 6.556V18.45c0 .684.724 1.125 1.353.824l6.647-3.156c.365-.173.365-.675 0-.848l-2.63-1.25zM17 12.55l-6.27-2.986c-.52-.247-.73-.83-.49-1.35l.84-1.76c.24-.52.83-.73 1.35-.49L18 8.44l2.5 1.19c.685.325 1.125 1.05 1.125 1.835v2.55c0 .785-.44 1.51-1.125 1.835L18 17.56l-2.5-1.19c-.52-.247-.73-.83-.49-1.35l.84-1.76c.24-.52.83-.73 1.35-.49z"></path></svg> -->
-                        </button>
-                    </div>
-                </div>
+    
+    <!-- Article 1: US Senate Passes Landmark Infrastructure Bill -->
+    <div class="reveal" data-delay="200">
+        <div class="article-card" data-article="article1">
+            <img src="Pictures/stomachPain.jpg" 
+                alt="US Capitol Building" 
+                loading="lazy">
+            <div class="card-content">
+                <h2 class="card-title">
+                    Recommendations from Gastroenterologist Dr. B. Purevsuren
+                </h2>
+                <p class="card-excerpt">
+                    “Early detection of gastrointestinal symptoms is the most reliable start to effective treatment”
+                    Digestive system diseases...
+                </p>
             </div>
+            <div class="card-footer">
+                <span>Read -></span>
+            </div>
+        </div>
+    </div>
 
-            <!-- Article 2: Global Leaders Gather for Climate Summit -->
-            <div class="reveal" data-delay="300">
-                <div class="article-card">
-                    <img src="https://placehold.co/800x400/059669/ffffff?text=Climate+Meeting" 
-                        alt="Global leaders in conference" 
-                        loading="lazy">
-                    <div class="card-content">
-                        <h2 class="card-title">
-                            Global Leaders Gather for Climate Summit in Paris
-                        </h2>
-                        <p class="card-excerpt">
-                            World leaders convened in Paris today for a crucial climate summit, discussing strategies to urgently reduce carbon emissions and protect vulnerable ecosystems. Delegates emphasized the urgency of global cooperation in upholding "the world's environment."
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <span>4 min read</span>
-                        <button class="share-button">
-                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.882 13.14 9 12.87 9 12.6V4.65c0-.685-.724-1.125-1.353-.824L2 6.556V18.45c0 .684.724 1.125 1.353.824l6.647-3.156c.365-.173.365-.675 0-.848l-2.63-1.25zM17 12.55l-6.27-2.986c-.52-.247-.73-.83-.49-1.35l.84-1.76c.24-.52.83-.73 1.35-.49L18 8.44l2.5 1.19c.685.325 1.125 1.05 1.125 1.835v2.55c0 .785-.44 1.51-1.125 1.835L18 17.56l-2.5-1.19c-.52-.247-.73-.83-.49-1.35l.84-1.76c.24-.52.83-.73 1.35-.49z"></path></svg>
-                        </button>
-                    </div>
-                </div>
+    <!-- Article 2: Global Leaders Gather for Climate Summit -->
+    <div class="reveal" data-delay="300">
+        <div class="article-card" data-article="article2">
+            <img src="Pictures/niitlel2IMG.jpg" 
+                alt="Global leaders in conference" 
+                loading="lazy">
+            <div class="card-content">
+                <h2 class="card-title">
+                    Recommendations from ENT Specialist Dr. D. Mungundulguun
+                </h2>
+                <p class="card-excerpt">
+                    - Early detection of any disease, along with accurate diagnosis and proper treatment, plays a crucial role in preventing the condition from worsening or progressing...
+                </p>
             </div>
+            <div class="card-footer">
+                <span>Read -></span>
+            </div>
+        </div>
+    </div>
 
-            <!-- Article 3: Tech Giant Unveils Breakthrough in Quantum Computing -->
-            <div class="reveal" data-delay="400">
-                <div class="article-card">
-                    <img src="https://placehold.co/800x400/4f46e5/ffffff?text=Quantum+Tech" 
-                        alt="Modern corporate building with light reflections" 
-                        loading="lazy">
-                    <div class="card-content">
-                        <h2 class="card-title">
-                            Tech Giant Unveils Breakthrough in Quantum Computing
-                        </h2>
-                        <p class="card-excerpt">
-                            Major leap forward for the tech industry, revealing advanced algorithms capable of performing complex computations. Their new processor will revolutionize data analysis and research in fields like medicine.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <span>5 min read</span>
-                        <button class="share-button">
-                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.882 13.14 9 12.87 9 12.6V4.65c0-.685-.724-1.125-1.353-.824L2 6.556V18.45c0 .684.724 1.125 1.353.824l6.647-3.156c.365-.173.365-.675 0-.848l-2.63-1.25zM17 12.55l-6.27-2.986c-.52-.247-.73-.83-.49-1.35l.84-1.76c.24-.52.83-.73 1.35-.49L18 8.44l2.5 1.19c.685.325 1.125 1.05 1.125 1.835v2.55c0 .785-.44 1.51-1.125 1.835L18 17.56l-2.5-1.19c-.52-.247-.73-.83-.49-1.35l.84-1.76c.24-.52.83-.73 1.35-.49z"></path></svg>
-                        </button>
-                    </div>
-                </div>
+    <!-- Article 3: Tech Giant Unveils Breakthrough in Quantum Computing -->
+    <div class="reveal" data-delay="400">
+        <div class="article-card" data-article="article3">
+            <img src="Pictures/niitlel3IMG.png" 
+                alt="Modern corporate building with light reflections" 
+                loading="lazy">
+            <div class="card-content">
+                <h2 class="card-title">
+                    Recommendations from Internal Medicine Specialist Dr. A. Sumyaabazar
+                </h2>
+                <p class="card-excerpt">
+                    “One in four people has a thyroid nodule, and most are unaware of it”
+                    If you experience the following symptoms...
+                </p>
             </div>
-            
-        </section>
+            <div class="card-footer">
+                <span>Read -></span>
+            </div>
+        </div>
+    </div>
+</section>
+
 
         <!-- 2. MAIN CONTENT (2-Column Layout for Desktop) -->
         <div class="main-content-layout reveal" data-delay="100">
@@ -439,6 +439,151 @@
                 });
             }
         });
+    </script>
+    <script>
+        const modal = document.getElementById("articleModal1");
+        const modalTitle = document.getElementById("modalTitle1");
+        const modalBody = document.getElementById("modalBody1");
+        const closeBtn = document.querySelector(".modal-close1");
+
+        /* ===== ARTICLE DATABASE ===== */
+        const articles = {
+            article1: {
+            body: `
+                <p><strong>“Early identification of gastrointestinal symptoms is the most reliable starting point for effective treatment.”</strong></p>
+
+            <p>
+            Digestive system disorders are becoming increasingly common across all age groups. Therefore, rather than enduring symptoms for a prolonged period, undergoing timely and accurate diagnostic examinations at an early stage is the most appropriate clinical decision.
+            </p>
+            <!--🔍-->
+            <p><strong>Dr. B. Purevsuren provides the following key medical recommendation to the public:</strong></p>
+
+            <p>
+            Gastrointestinal examinations should not be postponed and should be performed on a regular basis.
+            Symptoms such as heartburn, abdominal bloating, epigastric pain, constipation, or unexplained weight loss are often early clinical indicators of underlying digestive system disorders.
+            When a condition is detected at an early stage, treatment is typically faster, more cost-effective, and yields more reliable outcomes.
+            </p>
+
+            <p><strong>For residents of Bayanzurkh District, Dialab Private Hospital offers the following clinical advantages:</strong></p>
+
+            <p>
+            ✔ Rapid diagnostic services – minimal patient congestion and no unnecessary delays<br>
+            ✔ Affordable testing options – including bundled and corporate health packages<br>
+            ✔ Reliable diagnostics – conducted under the supervision of experienced medical specialists<br>
+            ✔ Laboratory equipped with modern, up-to-date medical technology
+            </p>
+
+            <p>
+            Early identification of the underlying cause of disease helps reduce long-term symptoms and recurrence, while also significantly lowering overall treatment costs.
+            </p>
+
+            `
+            },
+
+            article2: {
+            body: `
+            <p>
+            Early detection of any disease, followed by accurate diagnosis and appropriate treatment, plays a crucial role in preventing disease progression and complications.
+            In addition, timely medical care represents a significant investment in an individual’s physical health, economic stability, and psychological well-being.
+            </p>
+
+            <p>
+            With the onset of the cold season, the incidence of ear, nose, and throat (ENT) disorders has increased.
+            Seeking non-professional medical advice online or attempting self-treatment without proper guidance is a major contributing factor to disease progression.
+            Therefore, at the first appearance of symptoms, patients should consult a qualified specialist and undergo the necessary diagnostic examinations without delay.
+            </p>
+
+            <p><strong>Acute Otitis Media</strong></p>
+
+            <p>
+            During the cold season, increased rates of upper respiratory infections such as colds and influenza significantly raise the risk of developing acute otitis media.
+            This condition occurs particularly frequently in preschool-aged children due to anatomical and physiological factors.
+            Failure to obtain timely diagnosis and treatment may result in progression to chronic otitis media, recurrent ear discharge, hearing impairment, or serious intracranial complications such as meningitis.
+            </p>
+
+            <p><strong>Common symptoms indicating ear pain include:</strong></p>
+            <p>
+            High fever, disturbed sleep during the night, irritability or persistent crying in children,
+            ear pain, frequent touching or pulling of the ear, purulent ear discharge,
+            reduced hearing, restlessness, and decreased appetite.<br>
+            • If these symptoms are present, there is a high likelihood of acute otitis media, and prompt evaluation and treatment by an otolaryngologist (ENT specialist) are strongly recommended.
+            </p>
+
+            <p><strong>❌ Actions to Avoid</strong></p>
+            <p>
+            • Self-administering medications or injections at home without medical supervision<br>
+            • Attempting to clean or manipulate the ear canal<br>
+            • Allowing water to enter the ear<br>
+            • Forceful nose blowing<br>
+            • Instilling non-prescribed substances into the ear (e.g., oils, alcohol)<br>
+            • Applying heat compresses
+            </p>
+
+            <p>
+            Dialab Diagnostic and Laboratory Center is equipped with modern, high-quality medical technology and provides fast, affordable diagnostic services.
+            This enables both patients and physicians to receive accurate test results in a timely manner, ensuring high-quality, coordinated medical care and efficient access to comprehensive diagnostic and treatment services in one location.
+            </p>
+
+            `
+            },
+
+            article3: {
+            body: `
+            <p><strong>“One in four individuals has a thyroid nodule.”</strong></p>
+
+            <p>
+            If you experience any of the following symptoms, there may be an increased risk of thyroid disease, and medical consultation is strongly recommended.
+            </p>
+
+            <p>
+            • A palpable lump in the neck or visible enlargement of the neck <br>
+            • Difficulty swallowing or shortness of breath <br>
+            • Unexplained weight loss or weight gain <br>
+            • Heat intolerance or cold intolerance <br>
+            • Emotional instability or mood changes<br>
+            • Menstrual cycle irregularities in women. These symptoms are commonly observed in patients with thyroid nodules and other thyroid disorders.
+            </p>
+
+            <p><strong>🧪 At our Dialab Private Hospital, comprehensive thyroid screening packages are available with rapid turnaround times and at more affordable rates than the market average. These include:</strong></p>
+
+            <p>
+            • Thyroid hormone testing /TSH, FT3, FT4, Anti-TPO, Anti-TG/ <br>
+            • Thyroid ultrasound examination <br>
+            • Lipid metabolism assessment /CHOL, TG, HDL, LDL/ and calcium (Ca) testing <br>
+            • Electrocardiogram (ECG) evaluation<br>
+            • Reliable clinical examination and diagnostic assessment by an internal medicine specialist
+            </p>
+
+            <p>
+            Early detection of thyroid nodules significantly improves treatment outcomes and helps prevent a wide range of cardiovascular and metabolic complications.
+            </p>
+
+            `
+            }
+        };
+
+        /* ===== OPEN MODAL ===== */
+        document.querySelectorAll(".article-card").forEach(card => {
+            card.addEventListener("click", () => {
+            const key = card.dataset.article;
+            modalTitle.textContent =
+                card.querySelector(".card-title").textContent;
+            modalBody.innerHTML = articles[key].body;
+            modal.classList.add("active");
+            document.body.style.overflow = "hidden";
+            });
+        });
+
+        /* ===== CLOSE MODAL ===== */
+        closeBtn.addEventListener("click", closeModal);
+        modal.addEventListener("click", e => {
+            if (e.target === modal) closeModal();
+        });
+
+        function closeModal() {
+            modal.classList.remove("active");
+            document.body.style.overflow = "";
+        }
     </script>
 </body>
 </html>
