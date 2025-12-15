@@ -2274,6 +2274,19 @@ footer a{
         padding: var(--800padding);
     }
 
+    #modalTitle1 {
+        margin-bottom: 3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    #modalBody1 p {
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        line-height: 1.7;
+    }
+
     footer{
         padding: var(--800padding);
     }
@@ -2350,5 +2363,21 @@ footer a{
     } */
      .containerb{
         padding: var(--600padding);
+    }
+    .modal-content1{
+        max-width: 95%;
+        padding: 0.5rem;
+    }
+    #modalTitle1 {
+        margin-bottom: 3rem;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #modalBody1 p {
+        margin-bottom: 1rem;
+        margin-left: 5px;
+        margin-right: 5px;
+        line-height: 1.7;
     }
 }
